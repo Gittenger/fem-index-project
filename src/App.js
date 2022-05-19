@@ -23,7 +23,7 @@ function App() {
 			<main>
 				<ol>
 					{data.map((item, i) => (
-						<li>
+							<li key={i}>
 							<span>{`${(i + 1).toString()}) `}</span>
 							<a href={item.link}>{item.name}</a>
 						</li>
