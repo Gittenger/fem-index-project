@@ -5,13 +5,21 @@ import data from './data.js'
 
 function App() {
 	return (
-		<div className={styles.App}>
-			<header>
+		<div>
+			<div className={styles.mainBox}>
+				<div>
 				<p>
 					This is a collection of small but effective front-end projects geared
 					towards improving and showcasing my front-end skills.
 				</p>
-			</header>
+					<p>
+						Each of these is a project based on a design provided by the{' '}
+						<a href="https://www.frontendmentor.io/">Frontend Mentor</a> website. This
+						site provides professional designs and style guides from which developers
+						can use their favorite toolchains to craft a front-end without hassling
+						themselves with the design process.
+					</p>
+				</div>
 			<main>
 				<ol>
 					{data.map((item, i) => (
@@ -22,6 +30,7 @@ function App() {
 					))}
 				</ol>
 			</main>
+			</div>
 		</div>
 	)
 }
