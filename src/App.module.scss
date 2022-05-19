@@ -1,3 +1,34 @@
-.App {
 
+.mainBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 95%;
+	margin-top: 1rem;
+	border: var(--black) solid 1px;
+	border-radius: 3px;
+	padding: 1.5rem;
+	background: var(--grey);
+	box-shadow: 3px 1px 40px 10px rgba(0, 0, 0, 0.16);
+
+	& > div:first-child {
+		p {
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	main {
+		width: 100%;
+
+		ol {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+
+			li {
+				margin-left: 1.5rem;
+}
+		}
+	}
 }
