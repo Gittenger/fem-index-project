@@ -1,7 +1,20 @@
+@import './styles/mixins';
+
 .header {
 	background: var(--black);
 	height: 9rem;
 	width: 100%;
+
+	@include flex-center;
+
+	& > div {
+		width: 85%;
+		@include flex-center;
+
+		& > *:not(:last-child) {
+			margin-right: 2rem;
+		}
+	}
 
 	svg {
 		width: 50px;
@@ -22,10 +35,8 @@
 }
 
 .mainBox {
-	display: flex;
-	flex-direction: column;
+	@include flex-center-col;
 	justify-content: flex-start;
-	align-items: center;
 	width: 95%;
 	margin-top: 1rem;
 	border: var(--black) solid 1px;

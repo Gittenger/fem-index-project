@@ -5,12 +5,26 @@ import data from './data.js'
 import images from './assets/img-index.js'
 
 function App() {
-	const { Github } = images
+	const { Github, LinkedIn, WebIcon } = images
 
 	return (
 		<div>
 			<header className={styles.header}>
-				<Github />
+				<div>
+					<a href="https://github.com/Gittenger" target="_blank" rel="noreferrer">
+						<Github />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/john-pittenger/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<LinkedIn />
+					</a>
+					<a href="https://johnpittenger.dev/" target="_blank" rel="noreferrer">
+						<WebIcon />
+					</a>
+				</div>
 			</header>
 			<div className={styles.mainBox}>
 				<div>
@@ -31,7 +45,9 @@ function App() {
 						{data.map((item, i) => (
 							<li key={i}>
 								<span>{`${(i + 1).toString()}) `}</span>
-								<a href={item.link}>{item.name}</a>
+								<a href={item.link} target="_blank" rel="noreferrer">
+									{item.name}
+								</a>
 							</li>
 						))}
 					</ol>
