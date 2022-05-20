@@ -1,3 +1,5 @@
+@import './mixins';
+
 :root {
 	--offwhite: #fdf7fb;
 	--grey: #f0e8ed;
@@ -12,16 +14,10 @@ body {
 }
 
 #root {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	@include flex-center-col;
 
 	& > div {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		@include flex-center-col;
 	}
 }
 
