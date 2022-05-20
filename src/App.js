@@ -39,6 +39,10 @@ function App() {
 						can use their favorite toolchains to craft a front-end without hassling
 						themselves with the design process.
 					</p>
+					<p>
+						Each project has been developed entirely from scratch by me, John
+						Pittenger.
+					</p>
 				</div>
 				<main>
 					<ol>
